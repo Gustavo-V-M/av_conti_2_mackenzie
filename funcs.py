@@ -20,6 +20,7 @@ def somatorioProduto(X, Y):
     for i in range(len(X)):
         soma = soma + X[i]*Y[i]
 
+    return soma
 
 def A(X, Y):
 
@@ -41,8 +42,8 @@ def B(X, Y):
 
 def regressaoLinear(m):
 
-    x = np.array(range(len(m)))
-    y = m[:, 1]
+    x = m[:,0]
+    y = m[:,1]
 
     a = A(x,y)
     b = B(x,y)
