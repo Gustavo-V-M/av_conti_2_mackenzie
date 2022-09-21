@@ -35,7 +35,7 @@ def B(X, Y):
 
     n = len(X)
 
-    numerador = (somatorioQuadrados(X)*somatorio(Y)) - (somatorio(X)*somatorio(Y))
+    numerador = (somatorioQuadrados(X)*somatorio(Y)) - (somatorio(X)*somatorioProduto(X,Y))
     denominador = (n * somatorioQuadrados(X)) - (somatorio(X)**2)
 
     return numerador/denominador
