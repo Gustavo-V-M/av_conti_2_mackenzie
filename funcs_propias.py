@@ -50,14 +50,6 @@ def regressaoLinear(m):
 
     return a, b
 
-
-
-
-
-
-    
-
-
     
 
     
