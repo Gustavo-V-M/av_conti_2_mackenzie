@@ -11,7 +11,7 @@ def somatorioQuadrados(X):
 def somatorio(X):
     soma = 0
     for i in X:
-        soma = soma + i**2
+        soma = soma + i
     
     return soma
 
@@ -22,10 +22,10 @@ def somatorioProduto(X, Y):
 
     return soma
 
+
 def A(X, Y):
 
-
-    n = len(X)
+    n = len(X) + 1
     numerador = (n * somatorioProduto(X, Y)) - (somatorio(X) * somatorio(Y))
     denominador = (n * somatorioQuadrados(X)) - (somatorio(X)**2)
         
@@ -33,12 +33,14 @@ def A(X, Y):
 
 def B(X, Y):
 
-    n = len(X)
+    n = len(X) + 1
 
     numerador = (somatorioQuadrados(X)*somatorio(Y)) - (somatorio(X)*somatorioProduto(X,Y))
     denominador = (n * somatorioQuadrados(X)) - (somatorio(X)**2)
 
     return numerador/denominador
+
+
 
 def regressaoLinear(m):
 
